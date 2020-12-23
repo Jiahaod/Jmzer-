@@ -16,7 +16,7 @@
 
    加载Class文件
 
-   ![image-20201017123542223](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201017123542223.png)
+   ![image-20201017123542223](assets/image-20201017123542223.png)
 
    ```
    
@@ -113,9 +113,9 @@
 
     
 
-![image-20201017113442429](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201017113442429.png)
+![image-20201017113442429](assets/image-20201017113442429.png)
 
-![image-20201020202230586](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201020202230586.png)
+![image-20201020202230586](assets/image-20201020202230586.png)
 
 1、类加载子系统：通过这个对编译好的class进行加载
 
@@ -156,7 +156,7 @@
 
    字节码中的保存的基础数据
 
-   ![image-20201020210816702](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201020210816702.png)
+   ![image-20201020210816702](assets/image-20201020210816702.png)
 
 4. 访问标志
 
@@ -164,7 +164,7 @@
 
 5. 类/父类索引与接口索引集合
 
-   ![image-20201021083047196](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021083047196.png)
+   ![image-20201021083047196](assets/image-20201021083047196.png)
 
 6. 字段表集合
 
@@ -195,7 +195,7 @@
 
 字符指令的分类
 
-![image-20201021090308891](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021090308891.png)
+![image-20201021090308891](assets/image-20201021090308891.png)
 
 ## 类加载子系统
 
@@ -209,7 +209,7 @@
 
 读取字节码二进制流解析字节码二进制流的静态数据转换为运行时JVM方法区数据生成类的java.lang.Class对象,放入堆中,作为方法区的访问入口在加载类过程中，必然会触发父类加载。
 
-![image-20201021091751831](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021091751831.png)
+![image-20201021091751831](assets/image-20201021091751831.png)
 
 linking阶段：
 
@@ -223,11 +223,11 @@ linking阶段：
 
 (通过全限定名是否找到对应的方法  NoSuchMethodError)
 
-![image-20201021093019055](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021093019055.png)
+![image-20201021093019055](assets/image-20201021093019055.png)
 
 类加载器种类
 
-![image-20201021095505085](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021095505085.png)
+![image-20201021095505085](assets/image-20201021095505085.png)
 
 **启动类加载器**使用C语言开发
 
@@ -371,7 +371,7 @@ java启动参数   -Xss 数值[k|m|g]
 
 #### 堆结构和空间
 
-![image-20201021124307594](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021124307594.png)
+![image-20201021124307594](assets/image-20201021124307594.png)
 
 
 
@@ -411,9 +411,9 @@ Eden与S0(幸存者0区)/S1(幸存者1区)的内存分配比例是8：1：1
 
 
 
-![](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021134218814.png)
+![](assets/image-20201021134218814.png)
 
-![image-20201021124324534](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021124324534.png)
+![image-20201021124324534](assets/image-20201021124324534.png)
 
 ### 方法区
 
@@ -589,8 +589,8 @@ JVM调优
 
 Ps: +代表开启/-代表关闭
 
-![image-20201021152603247](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021152603247.png)
+![image-20201021152603247](assets/image-20201021152603247.png)
 
 ### JVM监控
 
-![image-20201021153209610](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021153209610.png)
+![image-20201021153209610](assets/image-20201021153209610.png)

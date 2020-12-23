@@ -23,9 +23,11 @@
 
 ## 服务发现 Eureka
 
-![image-20201025211830795](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201025211830795.png)
+![image-20201025211830795](assets/image-20201025211830795.png)
 
-Eureka组成![image-20201025212342630](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201025212342630.png)
+Eureka组成
+
+![image-20201025212342630](assets/image-20201025212342630.png)
 
 springboot中 eureka的配置
 
@@ -59,7 +61,7 @@ eureka:
 - Cancel - 服务下线，某个微服务通知注册中心暂停服务
 - Eviction - 服务剔除，90秒未续约，从服务注册表进行剔除
 
-![image-20201026104417110](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201026104417110.png)
+![image-20201026104417110](assets/image-20201026104417110.png)
 
 关闭自我保护
 
@@ -99,9 +101,9 @@ eureka:
 - @LoadBalanced是Ribbon提供的客户端负载均衡注解
 - 通常RestTemplate与@LoadBanalced联合使用
 
-![image-20201101152436884](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201101152436884.png)
+![image-20201101152436884](assets/image-20201101152436884.png)
 
-![image-20201101152638309](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201101152638309.png)
+![image-20201101152638309](assets/image-20201101152638309.png)
 
 ## OpenFeign
 
@@ -114,9 +116,9 @@ eureka:
 - Feign采用"接口+注解”方式开发，屏蔽了网络通信的细节
 - OpenFeign是SpringCloud对Feign的增强，支持Spring MVC注解
 
-![image-20201101161327284](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201101161327284.png)
+![image-20201101161327284](assets/image-20201101161327284.png)
 
-![image-20201101161411994](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201101161411994.png)
+![image-20201101161411994](assets/image-20201101161411994.png)
 
 和ribbon中一样
 
@@ -126,7 +128,7 @@ eureka:
 - 设置项：feign.client.config.微服务id.loggerLevel
 - 微服务id：default代表全局默认配置
 
-![image-20201101161912996](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201101161912996.png)
+![image-20201101161912996](assets/image-20201101161912996.png)
 
 ```
 logging:
@@ -140,22 +142,22 @@ feign:
         loggerLevel: FULL
 ```
 
-![image-20201101163936394](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201101163936394.png)
+![image-20201101163936394](assets/image-20201101163936394.png)
 
 ### OpenFegin传递对象
 
 - POST方式传递对象使用@RequestBody注解描述参数
 - GET方式将对象转化为Map后利用@RequestParam注解
 
-![image-20201104133749510](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201104133749510.png)
+![image-20201104133749510](assets/image-20201104133749510.png)
 
 -----
 
 ## Hystrix熔断器
 
-![image-20201104151705331](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201104151705331.png)
+![image-20201104151705331](assets/image-20201104151705331.png)
 
-![image-20201104151841154](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201104151841154.png)
+![image-20201104151841154](assets/image-20201104151841154.png)
 
 hystri放在加入者一方
 
@@ -171,7 +173,7 @@ hystri放在加入者一方
 - 在@FeignClient增加fallback属性说明Fallback类
 - fallback类要实现相同接口，重写服务降级业务逻辑
 
-![image-20201104192702703](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201104192702703.png)
+![image-20201104192702703](assets/image-20201104192702703.png)
 
 ### Hystrix Dashboard仪表盘
 
@@ -230,9 +232,9 @@ Netflix Zuul
 
 功能
 
-![image-20201105150646541](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201105150646541.png)
+![image-20201105150646541](assets/image-20201105150646541.png)
 
-![image-20201105170247510](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201105170247510.png)
+![image-20201105170247510](assets/image-20201105170247510.png)
 
 ### Zuul负载均衡与服务降级
 
@@ -248,7 +250,7 @@ public IRule ribbonRule()
 
 
 
-![image-20201105190300906](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201105190300906.png)
+![image-20201105190300906](assets/image-20201105190300906.png)
 
 ### 微服务网关流量控制
 
@@ -279,7 +281,7 @@ public IRule ribbonRule()
 
 
 
-![image-20201106180320876](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201106180320876.png)
+![image-20201106180320876](assets/image-20201106180320876.png)
 
 Zuul自定义过滤器
 
@@ -290,14 +292,14 @@ filterType() -过滤器类型: pre|routing|post
 run() -过滤逻辑
 ```
 
-![image-20201106221404945](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201106221404945.png)
+![image-20201106221404945](assets/image-20201106221404945.png)
 
 ## 配置中心
 
-![image-20201108165344520](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201108165344520.png)
+![image-20201108165344520](assets/image-20201108165344520.png)
 
-![image-20201108172302245](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201108172302245.png)
+![image-20201108172302245](assets/image-20201108172302245.png)
 
 spring-retry重试机制
 
-![image-20201108183436523](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201108183436523.png)
+![image-20201108183436523](assets/image-20201108183436523.png)

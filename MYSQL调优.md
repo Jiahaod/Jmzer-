@@ -14,7 +14,7 @@
 2. 单一属性是由基本数据类型构成的
 3. 数据库的表都是二维的
 
-![image-20201021155324299](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021155324299.png)
+![image-20201021155324299](assets/image-20201021155324299.png)
 
 当我们修改器系名时，对应的系主任也要改变，数据冗余了
 
@@ -26,7 +26,7 @@
 3. 其他字段可由主键确定
 4. 第二范式非递通过拆表减少数据冗余
 
-![image-20201021155422172](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021155422172.png)
+![image-20201021155422172](assets/image-20201021155422172.png)
 
 学号核系主任并不是直接依赖关系，还可在拆分。系名和系主任才是直接依赖关系。
 
@@ -36,7 +36,7 @@
 2. 字段要求**直接依赖于主键**，不允许间接依赖
 3. 第三范式目的在于拆分实体(完善主从表)
 
-![image-20201021155440804](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201021155440804.png)
+![image-20201021155440804](assets/image-20201021155440804.png)
 
 
 
@@ -61,17 +61,17 @@
 
 1、数字类型
 
-![image-20201022201522608](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201022201522608.png)
+![image-20201022201522608](assets/image-20201022201522608.png)
 
-![image-20201022201712332](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201022201712332.png)
+![image-20201022201712332](assets/image-20201022201712332.png)
 
-![image-20201022202041647](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201022202041647.png)
+![image-20201022202041647](assets/image-20201022202041647.png)
 
 
 
 2、日期类型与二进制类型
 
-![image-20201022202411006](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201022202411006.png)
+![image-20201022202411006](assets/image-20201022202411006.png)
 
 3、字符串类型
 
@@ -84,7 +84,7 @@
 2. 字符串很少被变更的场景
 3. 适合保存多字节字符
 
-![image-20201022202220053](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201022202220053.png)
+![image-20201022202220053](assets/image-20201022202220053.png)
 
 使用场景
 
@@ -94,7 +94,7 @@
 
 ## MySQL体系结构
 
-![image-20201022202641730](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201022202641730.png)
+![image-20201022202641730](assets/image-20201022202641730.png)
 
 _____
 
@@ -270,7 +270,7 @@ InnoDB中的Hash索引
 
 - 多字段下，左侧字段必须是升序的，且顺序不允许打乱
 
-![image-20201023095215201](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201023095215201.png)
+![image-20201023095215201](assets/image-20201023095215201.png)
 
 索引重新统计
 
@@ -344,7 +344,7 @@ partitions: 分取
 12、All
 ```
 
-![image-20201023154326729](C:\Users\天一喔蜂蜜柚子\AppData\Roaming\Typora\typora-user-images\image-20201023154326729.png)
+![image-20201023154326729](assets/image-20201023154326729.png)
 
 filtered是一个百分比值，代表(rows+filtered)/100，这个结果用于前表产生交互。
 
